@@ -1,0 +1,14 @@
+.header {
+    position: relative;
+    top: 0;
+    /*background-color: darkred;*/
+}
+
+
+/*SiderJs Styles*/
+
+.company_info_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+

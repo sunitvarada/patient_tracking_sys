@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body,
+#root,
+.App{
+
+    height: 100%;
+    width: 100%;
+}
+.App {
+    position: relative;
+    display: flex;
+}
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-track:hover {
+    background: #555;
+}
+
+.App{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 260px auto;
+    margin: 0;
+}
+
+aside {
+    background-color: #001529;
+}
+
+main {
+
+}
+/*Sidebar Menu Style*/
+
+.menu{
+    background-color: #001529;
+}
+.company_info_wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.company_info_wrapper>p{
+    margin-top: 1rem;
+    padding:0.8rem 0;
+}
+.user_wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.user_wrapper> img{
+    width: 40%;
+    margin: 0.3rem 0;
+    border: 3px solid #888888;
+    border-radius: 50%;
+}
+.user_wrapper>h2,p{
+    padding: 0.5rem;
+}
