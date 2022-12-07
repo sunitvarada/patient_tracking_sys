@@ -1,29 +1,41 @@
 import React, { useState } from 'react';
 import { Row, Col, Table } from 'antd';
+import Data from '../../data.json'
 
 const columns = [
-    {
-        title: 'Name',
-        dataIndex: 'name',
-    },
-    {
-        title: 'Age',
-        dataIndex: 'age',
-    },
-    {
-        title: 'Address',
-        dataIndex: 'address',
-    },
+  {
+    title: "Name",
+    dataIndex: "pName",
+  },
+  {
+    title: "Contact",
+    dataIndex: "pEContact",
+  },
+  {
+    title: "Doctor",
+    dataIndex: "pDoctor",
+  },
+  {
+    title: "Diagonosis",
+    dataIndex: "pDiagnosis",
+  },
+  {
+    title: "Action",
+    dataIndex: "",
+  }
 ];
-const data = [];
-for (let i = 0; i < 12; i++) {
-    data.push({
-        key: i,
-        name: `Patient ${i}`,
-        age: 32,
-        address: `London, Park Lane no. ${i}`,
-    });
-}
+const data = [...Data];
+data.map((value, index)=>{
+     return (
+       <tr>
+         <td key={value.id}></td>
+         <td>{value.pName}</td>
+         <td>{value.pEContact}</td>
+         <td>{value.pDoctor}</td>
+         <td>{value.pDiagnosis}</td>
+       </tr>
+     );
+})
 const ViewPatient = () => {
 
     const [selectedRowKeys, setSelectedRowKeys] = useState([]);

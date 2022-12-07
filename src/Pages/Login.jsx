@@ -12,7 +12,7 @@ export const Login = () => {
             password: data.get('password'),
         });
         if(email === 'sunitvarada@yahoo.com' && password === 'qwerty'){
-            window.location.href = "http://localhost:3000/home";
+            window.location.href = "http://localhost:3000/dashboard";
         }
     };    return (
         <div>Login</div>

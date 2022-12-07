@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "pName": "Ervin Leanne",
+    "pEContact": 9876543210,
+    "pDoctor": "Dr. Prakash Verma",
+    "pDiagnosis": "Fever"
+  },
+  {
+    "id": 2,
+    "pName": "Kevin Wall",
+    "pEContact": 9898989898,
+    "pDoctor": "Dr. Suresh",
+    "pDiagnosis": "Skin Allergy"
+  },
+  {
+    "id": 3,
+    "pName": "Adam G",
+    "pEContact": 5656565656,
+    "pDoctor": "Dr. Ramesh",
+    "pDiagnosis": "Joint Pain"
+   },
+   {
+        "id": 4,
+        "pName": " Lily James",
+        "pEContact": 8585858585,
+        "pDoctor": "Dr. Prakash Verma",
+        "pDiagnosis": "Skin Cancer"
+    }
+     
+]

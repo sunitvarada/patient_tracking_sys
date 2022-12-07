@@ -1,30 +1,67 @@
-import React from "react";
-import './index.css';
-import {Routes, Route} from 'react-router-dom'
-// import {Layout} from "antd";
-import Sider from "./components/Sider";
-import Header from "./components/Header";
-import {Patient} from "./components/Patient";
-// import Footer from './components/Footer';
-import Content from "./components/Content";
+<Form
+          
+          form={form}
+          name="form"
+          onFnish={onFinish}
+          autoComplete="off"
+          initialValues={{
+            remember: true,
+          }}
+        >
+          <Row gutter={[16, 16]}>
+            <Col span={12}>
+            //clear
+            </Col>
+            <Col span={12}>
+              
+              
 
+              
+            </Col>
 
-const App= ()=>{
-    return(
-        <div className="App">
-            <aside id="sidenav"><Sider/></aside>
-            <main>
-                <Header/>
-                <div id="main" className="content">
-                   <Content/>
-                </div>
-
-            </main>
-            <Routes>
-                <Route path="/patient" element={<Patient/>}/>
-            </Routes>
-        </div>
-    )
-}
-
-export default App;
+            {/* Buttons Reset and Submit*/}
+            <Form.Item
+              wrapperCol={{
+                offset: 8,
+                span: 16,
+              }}
+            >
+              <Button
+                htmlType="reset"
+                style={{
+                  position: "relative",
+                  backgroundColor: "#f2120d",
+                  color: "white",
+                  margin: "0 auto",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                onClick={onReset}
+              >
+                Reset
+              </Button>
+            </Form.Item>
+            <Form.Item
+              wrapperCol={{
+                offset: 8,
+                span: 16,
+              }}
+              required="true"
+            >
+              <Button
+                htmlType="submit"
+                style={{
+                  position: "relative",
+                  backgroundColor: "#2837d7",
+                  color: "white",
+                  margin: "0 auto",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                onSubmit={onSubmit}
+              >
+                Add Patient Details
+              </Button>
+            </Form.Item>
+          </Row>
+        </Form>
